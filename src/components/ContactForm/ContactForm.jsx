@@ -38,7 +38,6 @@ export const ContactForm = () => {
     if (duplicate) {
       return alert(`${values.name} is already in contacts`);
     }
-    console.log(values);
     dispatch(addContact({ name: values.name, phone: values.number }));
     resetForm();
   };
