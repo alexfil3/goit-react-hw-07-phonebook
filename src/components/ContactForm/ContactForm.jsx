@@ -39,7 +39,7 @@ export const ContactForm = () => {
       return alert(`${values.name} is already in contacts`);
     }
     console.log(values);
-    dispatch(addContact(values));
+    dispatch(addContact({ name: values.name, phone: values.number }));
     resetForm();
   };
 
